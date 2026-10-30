@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 Ways Learning to Code Boosts Your Child’s Thinking Skills</title>
+<meta name="description" content="Coding for kids builds logic, creativity, patience and confidence. Try the block game, explore five ways coding sharpens young minds, and find the right way to start with Python.">
+<meta name="keywords" content="coding for kids, learn coding, benefits of coding, learn python, stem learning, kids coding classes, coding skills">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--beige:#F6EBDA;--brown:#4E3322;--orange:#F28A2E;--white:#FFFFFF;--pink:#F9CFDA;--soft:#EBD9BF}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,sans-serif;background:var(--beige);color:var(--brown);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'Baloo 2',cursive;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:9;background:var(--white);border-bottom:4px solid var(--orange)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.logo{font-family:'Baloo 2';font-weight:800;font-size:1.3rem;text-decoration:none}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;padding:6px 14px;border-radius:99px;font-size:.95rem}
+nav a:hover{background:var(--pink)}
+nav a.go{background:var(--orange);color:var(--white)}
+.hero{padding:48px 0 70px;background:radial-gradient(circle at 90% 10%,var(--pink) 0 140px,transparent 141px)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800}
+.hero p{margin:16px 0 24px;max-width:46ch}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:16px;border:3px solid var(--brown);background:var(--orange);color:var(--white);box-shadow:4px 4px 0 var(--brown);transition:transform .15s,box-shadow .15s;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--brown)}
+.btn.alt{background:var(--white);color:var(--brown)}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.lab{background:var(--white);border:3px solid var(--brown);border-radius:28px;padding:20px;box-shadow:8px 8px 0 var(--brown)}
+.lab h2{font-size:1.4rem}
+.lab small{display:block;margin-bottom:12px}
+.stage{position:relative;height:120px;background:var(--soft);border-radius:18px;overflow:hidden;border:2px dashed var(--brown)}
+.stage:after{content:"🏁";position:absolute;right:14px;bottom:10px;font-size:2rem}
+#bot{position:absolute;left:8px;bottom:8px;font-size:3rem;transition:transform .5s ease}
+#say{position:absolute;left:70px;top:10px;background:var(--pink);border:2px solid var(--brown);border-radius:14px;padding:3px 12px;font-weight:700;opacity:0;transition:opacity .2s}
+.pal,.seq{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.blk{border:2px solid var(--brown);border-radius:12px;padding:8px 14px;font-weight:700;font-family:inherit;font-size:.95rem;cursor:pointer;background:var(--pink);color:var(--brown)}
+.blk:hover{background:var(--orange);color:var(--white)}
+.seq{min-height:48px;padding:8px;border-radius:14px;background:var(--beige)}
+.seq .blk{background:var(--white);cursor:default}
+.seq em{opacity:.6;align-self:center;font-style:normal}
+.ctl{display:flex;gap:10px;margin-top:12px;align-items:center;flex-wrap:wrap}
+#msg{font-weight:700}
+section{padding:64px 0}
+.title{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:8px}
+.sub{max-width:58ch;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--white);border:3px solid var(--brown);border-radius:24px;padding:22px}
+.card:nth-child(odd){transform:rotate(-1deg)}
+.card:nth-child(even){transform:rotate(1deg)}
+.card .ic{font-size:2.4rem}
+.card h3{font-size:1.35rem;margin:6px 0}
+.card details{margin-top:12px;background:var(--pink);border-radius:14px;padding:8px 12px}
+.card summary{font-weight:700;cursor:pointer}
+.pink{background:var(--pink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.code{background:var(--brown);color:var(--beige);border-radius:20px;padding:20px;font-family:ui-monospace,Menlo,monospace;font-size:.95rem;overflow-x:auto}
+.code b{color:var(--orange)}
+.cta{background:var(--brown);color:var(--beige);text-align:center;border-radius:36px;padding:48px 22px;margin:0 20px}
+.cta h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.cta p{margin:12px auto 24px;max-width:50ch}
+.cta .btns{justify-content:center}
+.cta .btn{border-color:var(--beige);box-shadow:4px 4px 0 var(--orange)}
+footer{padding:44px 0 30px;text-align:center}
+footer .links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+footer a{font-weight:700}
+@media(max-width:800px){.hero .wrap,.two{grid-template-columns:1fr}nav a:not(.go){display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">🧠 Think in Code</a>
+<nav aria-label="Main"><a href="#ways">Five ways</a><a href="#python">Why Python</a><a href="https://justacademyjunior.com/programs">Programs</a><a class="go" href="https://justacademyjunior.com/free-demo">Free demo</a></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Your child is not learning to code. They are learning how to think.</h1>
+<p>Coding for kids turns screen time into thinking time. Build a tiny program with us, then see the five ways it grows a young mind.</p>
+<div class="btns"><a class="btn" href="https://justacademyjunior.com/free-demo">Book a free demo</a><a class="btn alt" href="https://justacademyjunior.com/programs">See the programs</a></div>
+</div>
+<div class="lab" aria-label="Block game">
+<h2>Program the robot</h2><small>Tap blocks to build a plan, then press Run.</small>
+<div class="stage"><div id="say"></div><div id="bot" aria-hidden="true">🤖</div></div>
+<div class="pal" role="group" aria-label="Blocks">
+<button class="blk" data-a="move">Move ➜</button><button class="blk" data-a="jump">Jump ⤴</button><button class="blk" data-a="spin">Spin ⟳</button><button class="blk" data-a="say">Say hi 💬</button></div>
+<div class="seq" id="seq" aria-live="polite"><em>Your plan appears here</em></div>
+<div class="ctl"><button class="btn" id="run" type="button">Run</button><button class="btn alt" id="clr" type="button">Clear</button><span id="msg"></span></div>
+</div>
+</div></div>
+
+<section id="ways"><div class="wrap">
+<h2 class="title">Five ways coding sharpens a young mind</h2>
+<p class="sub">Every block you just tapped practised a real thinking habit. Here is what parents notice over time.</p>
+<div class="grid">
+<div class="card"><div class="ic">🧩</div><h3>Clear logical thinking</h3><p>Sequence, conditions and loops teach children to put ideas in a sensible order.</p><details><summary>Try at home</summary>Ask your child to give exact steps for making a sandwich, then follow them literally.</details></div>
+<div class="card"><div class="ic">🎨</div><h3>Bold creativity</h3><p>A blank screen invites games, stories and, later, a first Python website.</p><details><summary>Try at home</summary>Ask, “What if the character moved faster?” and let them test it.</details></div>
+<div class="card"><div class="ic">🐞</div><h3>Patience through bugs</h3><p>Debugging turns “I can’t” into “let me try another way.”</p><details><summary>Try at home</summary>When they are stuck, ask what they think is going wrong before helping.</details></div>
+<div class="card"><div class="ic">🔬</div><h3>Maths and STEM learning</h3><p>Numbers, patterns and variables like n in Python make maths feel useful.</p><details><summary>Try at home</summary>Keep a family game score with a “variable” on paper.</details></div>
+<div class="card"><div class="ic">🌟</div><h3>Confidence and teamwork</h3><p>Making something that works builds pride, focus and clear communication.</p><details><summary>Try at home</summary>Ask your child to explain their project to you like you are five.</details></div>
+</div></div></section>
+
+<section id="python" class="pink"><div class="wrap two">
+<div><h2 class="title">Why Python is a friendly first language</h2>
+<p>The Python programming language reads close to plain English, so children spend more time thinking and less time fighting symbols. The same language that draws shapes at ten can power websites and data projects later.</p>
+<p style="margin:14px 0 20px">Curious how it grows into a real skill? See a structured Python course.</p>
+<a class="btn" href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi">Explore the Python course</a></div>
+<div class="code" aria-label="Python example"><b>name</b> = "Asha"<br><b>n</b> = 3<br><br><b>for</b> i <b>in</b> range(n):<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Hello,", name)</div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="title">Want the full story?</h2>
+<p class="sub">Read the complete guide with age by age tips, myths and answers to common parent questions.</p>
+<a class="btn alt" href="https://justacademyjunior.com/blog/5-ways-learning-to-code-boosts-your-childs-thinking-skills">Read the blog guide</a>
+</div></section>
+
+<div class="cta"><h2>Give your child a head start in thinking</h2><p>Start with a free demo class or pick a program that fits your child’s age.</p>
+<div class="btns"><a class="btn" href="https://justacademyjunior.com/free-demo">Free demo</a><a class="btn" href="https://justacademyjunior.com/contact">Enroll now</a></div></div>
+</main>
+
+<footer><div class="wrap"><div class="links">
+<a href="https://justacademyjunior.com/free-demo">Free demo</a><a href="https://justacademyjunior.com/programs">Programs</a><a href="https://www.justacademy.co/course-detail/delhi/python-training-in-delhi">Python course</a><a href="https://justacademyjunior.com/blog/5-ways-learning-to-code-boosts-your-childs-thinking-skills">Blog</a><a href="https://justacademyjunior.com/contact">Contact</a></div>
+<p>Made for curious kids and the grown ups who cheer for them.</p></div></footer>
+
+<script>
+const bot=document.getElementById('bot'),say=document.getElementById('say'),seq=document.getElementById('seq'),msg=document.getElementById('msg');
+let plan=[],x=0,y=0,r=0,busy=false;
+const label={move:'Move',jump:'Jump',spin:'Spin',say:'Say hi'};
+const draw=()=>{seq.innerHTML=plan.length?'':'<em>Your plan appears here</em>';plan.forEach(a=>{const s=document.createElement('span');s.className='blk';s.textContent=label[a];seq.appendChild(s)})};
+const put=()=>bot.style.transform=`translate(${x}px,${y}px) rotate(${r}deg)`;
+const wait=t=>new Promise(f=>setTimeout(f,t));
+document.querySelectorAll('.pal .blk').forEach(b=>b.onclick=()=>{if(busy||plan.length>=8)return;plan.push(b.dataset.a);msg.textContent='';draw()});
+document.getElementById('clr').onclick=()=>{if(busy)return;plan=[];x=y=r=0;put();msg.textContent='';draw()};
+document.getElementById('run').onclick=async()=>{
+ if(busy||!plan.length){msg.textContent='Add a block first!';return}
+ busy=true;x=y=r=0;put();await wait(300);
+ const max=Math.max(0,bot.parentElement.clientWidth-130);
+ for(const a of plan){
+  if(a==='move')x=Math.min(max,x+max/3);
+  if(a==='jump'){y=-50;put();await wait(300);y=0}
+  if(a==='spin')r+=360;
+  if(a==='say'){say.textContent='Hi, I am a program!';say.style.opacity=1;put();await wait(900);say.style.opacity=0}
+  put();await wait(600)}
+ msg.textContent='Nice! Order matters in code.';busy=false};
+</script>
+</body>
+</html>
